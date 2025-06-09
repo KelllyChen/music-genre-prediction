@@ -5,13 +5,8 @@ import joblib
 import os
 import tempfile
 import pandas as pd
-from visualization import (
-    plot_audio_waveform,
-    plot_feature_breakdown,
-    plot_genre_probabilities,
-    plot_spectrogram,
-    create_audio_dashboard
-)
+from visualization import plot_audio_waveform, plot_feature_breakdown, plot_genre_probabilities, plot_spectrogram, create_audio_dashboard
+
 
 
 @st.cache_resource
@@ -66,8 +61,6 @@ def extract_features(file_path):
         return None, None, None
 
 
-# Visualization functions moved to visualization.py
-
 
 def main():
     st.set_page_config(
@@ -84,7 +77,7 @@ def main():
     if model is None:
         st.stop()
     
-    # Define genres (same order as in training)
+    # Define genres 
     genres = ['blues', 'classical', 'country', 'disco', 'hiphop',
               'jazz', 'metal', 'pop', 'reggae', 'rock']
     
