@@ -41,7 +41,7 @@ For each `.au` file, the following audio features are extracted:
 - Model performance is reported via classification metrics.
 - The best model is saved to `models/model.joblib`.
 
-## APP
+## Demo
 - Upload and visualize audio waveform and spectrogram
 - Breakdown of MFCC and chroma features
 - Radar chart of feature category strengths
